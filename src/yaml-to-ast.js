@@ -1,7 +1,7 @@
 "use strict";
 import { load } from "yaml-ast-parser";
 import traverse from "traverse";
-import StructuredSource from "structured-source";
+import { StructuredSource } from "structured-source";
 
 function yamlnode_to_lintnode(src, yaml, node) {
   if (typeof(node) == "object" && node != null && node.startPosition >= 0 && node.endPosition >= 0) {

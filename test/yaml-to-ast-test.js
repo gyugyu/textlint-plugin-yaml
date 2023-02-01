@@ -3,8 +3,8 @@ const fs = require("fs");
 const path = require("path");
 const glob = require("glob");
 const assert = require("power-assert");
-const test = require("textlint-ast-test").test;
-import {parse_yaml} from "../src/yaml-to-ast";
+import { test } from "@textlint/ast-tester"
+import { parse_yaml } from "../src/yaml-to-ast";
 
 describe("html-to-ast-test", function () {
   it("should return AST that passed isTxtAST", function () {

@@ -1,29 +1,27 @@
 {
-  "name": "textlint-plugin-yaml",
-  "version": "0.0.1",
+  "name": "@gyugyu/textlint-plugin-yaml",
+  "version": "0.1.0",
   "main": "lib/index.js",
-  "repository": "git@github.com:takemikami/textlint-plugin-yaml.git",
-  "author": "Mikami, Takeshi <takeshi.mikami@gmail.com>",
+  "repository": "git@github.com:gyugyu/textlint-plugin-yaml.git",
+  "author": "Yusuke Yagyu <yu@hoaxster.net>",
   "license": "MIT",
   "scripts": {
     "build": "babel -s -d lib src",
-    "test": "mocha",
+    "test": "mocha --require @babel/register",
     "watch": "babel -w -s -d lib src",
-    "postinstall": "postinstall-build lib \"npm run build\""
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "postinstall-build": "^5.0.1",
-    "structured-source": "^3.0.2",
-    "textlint-plugin-html": "^0.1.7",
-    "traverse": "^0.6.6",
-    "yaml-ast-parser": "^0.0.40"
+    "structured-source": "^4.0.0",
+    "traverse": "^0.6.7",
+    "yaml-ast-parser": "^0.0.43"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.24.1",
-    "mocha": "^4.0.1",
-    "power-assert": "^1.4.4",
-    "textlint-ast-test": "^2.0.1"
+    "@babel/cli": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "@textlint/ast-tester": "^13.1.1",
+    "mocha": "^10.2.0",
+    "power-assert": "^1.6.1"
   }
 }
