@@ -1,6 +1,6 @@
 {
   "name": "@gyugyu/textlint-plugin-yaml",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "repository": "git@github.com:gyugyu/textlint-plugin-yaml.git",
   "author": "Yusuke Yagyu <yu@hoaxster.net>",
