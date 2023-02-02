@@ -1,5 +1,7 @@
 "use strict";
 
+import { YamlProcessor } from "./YamlProcessor"
+
 export default {
-    Processor: require("./YamlProcessor")
+    Processor: YamlProcessor
 }
